@@ -1,3 +1,6 @@
+const list = document.querySelector(".gallery");
+
+
 const images = [
   {
     url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
@@ -24,3 +27,9 @@ const images = [
     alt: "Lighthouse Coast Sea",
   }
 ];
+
+const markup = images
+  .map((image) => `<li class="list-image"><img src="${image.url}" alt="${image.alt}"></li>`)
+  .join("");
+
+list.insertAdjacentHTML("afterbegin", markup);
