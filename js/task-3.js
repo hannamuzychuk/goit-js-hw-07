@@ -9,10 +9,3 @@ textInput.addEventListener("input", (event) => {
             output.textContent = userName;
         }
 });
-
-// textInput.addEventListener("keydown", (event) => {
-//     if (event.key === "Enter") {
-//         textInput.value = "";
-//         output.textContent = "Anonymous";
-//     }
-// });
